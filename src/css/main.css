@@ -1,0 +1,48 @@
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.apps{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 500px;
+    background-color: rgb(177, 5, 5);
+    position: relative;
+    border-radius: 20px;
+    
+}
+.title {
+    flex: 0 1 auto;
+    /* background-color: black; */
+    text-align: center;
+    color: white;
+    font-weight: 700;
+}
+.app-body {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 0 0 20px 20px ;
+}
+.app-body > *{
+    margin-top: 10px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#tips-calculator-button {
+    margin-top: 40px;
+    color: white;
+    font-weight: 700;
+    background-color: rgb(177, 5, 5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

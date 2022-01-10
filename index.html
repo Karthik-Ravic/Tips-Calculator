@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/global.css">
+    <link rel="stylesheet" href="./src/css/header.css">
+    <link rel="stylesheet" href="./src/css/layout.css">
+    <link rel="stylesheet" href="./src/css/main.css">    
+    <title>Tips-calculator</title>
+
+</head>
+<body>
+    <div class="layout">
+        <header>
+
+        </header>
+        <div class="content">
+            <main class="apps">
+                <h2 class = "title">
+                    Tips Calculator
+                </h2>
+                <div class="app-body">
+                    <div class="bill_container">
+                        <label for="bill-amount">How much was your bill?</label>
+                        <div class="bill-amount__container">
+                            <span>	&#8377; </span>    
+                            <input type="number" name="bill-amount" id="bill-amount" placeholder="Enter thr bill amount" min ="0">
+                        </div>
+                    </div>
+                    <div class="feedback_container">
+                        
+                        <label for="feedback">How was your service?</label>
+                        <select name="feedback" id="feedback">
+                            <option selected disabled hidden>Select a rating</option>
+                            <option value="0.30">Outstanding</option>
+                            <option value="0.2">Better</option>
+                            <option value="0.1">Good</option>
+                            <option value="0">Poor</option>
+                        </select>
+                    </div>
+                    <div class="people_container">
+
+                        <label for="no-of-people">How many people are sharing the bill?</label>
+                        <div class="no-of-people_wrapper">
+                            <input type="number" name="no-of-people" id="no-of-people" placeholder="The number of people" min ="1">
+                            <!-- <span>people</span> -->
+                        </div>
+                    </div>
+                    <input type="button" id="tips-calculator-button" onclick="calculate()" value="Calculate">
+                        
+                </div>
+            </main>
+        </div>
+        <footer></footer>
+    </div>
+    <script src="./src/calculator.js"></script>
+</body>
+</html>
